@@ -9,25 +9,7 @@ ENV WORK=/opt/hsl-map-server
 ENV NODE_OPTS ""
 
 RUN apt-get update \
-  && DEBIAN_FRONTEND=noninteractive apt-get install -y\
-  git \
-  unzip \
-  build-essential \
-  pngquant \
-  libgl1-mesa-glx \
-  libgl1-mesa-dri \
-  xserver-xorg-video-dummy \
-  libgles2-mesa \
-  libstdc++6 \
-  python \
-  libcairo2-dev \
-  libgles2-mesa-dev \
-  libgbm-dev \
-  libllvm3.9 \
-  libprotobuf-dev \
-  libxxf86vm-dev \
-  xvfb \
-&& apt-get clean
+  && DEBIAN_FRONTEND=noninteractive apt-get install -y git unzip pngquant libgl1-mesa-glx libgl1-mesa-dri xserver-xorg-video-dummy libgles2-mesa libstdc++6
 
 RUN mkdir -p ${WORK}
 WORKDIR ${WORK}
