@@ -2,7 +2,7 @@
 
 #workaround for azure DNS issue
 
-if [ -n "$MESOS_CONTAINER_NAME"  ]; then 
+if [ -n "$MESOS_CONTAINER_NAME"  ]; then
   echo -e "\nsearch marathon.l4lb.thisdcos.directory" >> /etc/resolv.conf
 fi
 
