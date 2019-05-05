@@ -7,5 +7,11 @@ module.exports = {
     "headers": {
       "Cache-Control": "public,max-age=43200"
     }
+  },
+  "/map/v1/hb-parking-map": {
+    "source": `hbparking://`,
+    "headers": {
+      "Cache-Control": "public,max-age=180"
+    }
   }
 }
