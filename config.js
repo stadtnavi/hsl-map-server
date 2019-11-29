@@ -13,5 +13,11 @@ module.exports = {
     "headers": {
       "Cache-Control": "public,max-age=180"
     }
+  },
+  "/map/v1/roadworks-bw-map": {
+    "source": `roadworksbw://`,
+    "headers": {
+      "Cache-Control": "public,max-age=43200"
+    }
   }
 }
