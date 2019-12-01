@@ -30,7 +30,7 @@
     "tilelive-otp-routes": "HSLdevcom/tilelive-otp-routes",
     "tilelive-otp-stops": "HSLdevcom/tilelive-otp-stops",
     "tilelive-hb-parking": "mfdz/tilelive-park-api",
-    "tilelive-hb-parking": "mfdz/tilelive-roadworks-bw",
+    "tilelive-roadworks-bw": "mfdz/tilelive-roadworks-bw",
     "tilelive-vector": "^3.9.3",
     "tilelive-xray": "^0.4.0"
   }

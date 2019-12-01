@@ -17,7 +17,7 @@ module.exports = {
   "/map/v1/roadworks-bw-map": {
     "source": `roadworksbw://`,
     "headers": {
-      "Cache-Control": "public,max-age=43200"
+      "Cache-Control": "public,max-age=3600"
     }
   }
 }
