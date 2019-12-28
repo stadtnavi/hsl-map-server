@@ -19,4 +19,5 @@ node_modules/tessera/bin/tessera.js --port 8080 --config config.js --multiproces
 -r ${WORK}/node_modules/tilelive-otp-routes/ \
 -r ${WORK}/node_modules/tilelive-gl/ \
 -r ${WORK}/node_modules/tilelive-hb-parking/ \
+-r ${WORK}/node_modules/tilelive-roadworks-bw/ \
 && sleep 10 && node_modules/.bin/forever --fifo logs 0
