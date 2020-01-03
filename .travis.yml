@@ -8,7 +8,9 @@ install: true
 
 env:
   global:
+  - OTP_URL=opentripplanner-hb:8080/otp/routers/hb/index/graphql
   - ORG=mfdz
+  - DOCKER_USER=lehrenfried
 
 
 language: C
