@@ -1,7 +1,7 @@
 FROM node:6-stretch
 MAINTAINER Reittiopas version: 0.1
 
-ENV OTP_URL ""
+#ENV OTP_URL ""
 ENV WORK=/opt/hsl-map-server
 ENV NODE_OPTS ""
 
