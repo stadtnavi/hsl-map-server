@@ -8,12 +8,17 @@ install: true
 
 env:
   global:
-  - OTP_URL=opentripplanner-hb:8080/otp/routers/hb/index/graphql
+  # this is set to a Finnish API server as we need a working API for the map server to start. of course it doesn't return
+  # useful information for Germany but at least we can test that the tiles exist (even though they are empty).
+  - OTP_URL=api.digitransit.fi/routing/v1/routers/hsl/index/graphql
+  # the actual roadworks API server seems to block requests from the travis build hosts and therefore we need to override the URL and use static JSON hosted on Github
+  - ROADWORKS_API_URL="https://gist.githubusercontent.com/leonardehrenfried/394c25941028670b5be26ef24248725d/raw/428c0c14cf6ee62f926a798fa7fda6755740185b/roadworks.json"
   - ORG=mfdz
   - DOCKER_USER=lehrenfried
 
-
 language: C
 
-script: ./travis-build.sh
+script:
+  - wget -qO- "https://baustellen.strassen.baden-wuerttemberg.de/bis_wfs/wfs?VERSION=1.0.0&typeName=bis:Baustelle&request=GetFeature&outputFormat=json"
+  - ./travis-build.sh
 

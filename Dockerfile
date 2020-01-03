@@ -31,5 +31,4 @@ RUN mkdir /.forever && chmod -R 777 /.forever
 
 ADD run.sh /usr/local/bin/
 
-
 CMD /usr/local/bin/run.sh
