@@ -6,6 +6,11 @@ branches:
 services: docker
 install: true
 
+env:
+  global:
+  - ORG=mfdz
+
+
 language: C
 
 script: ./travis-build.sh
