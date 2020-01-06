@@ -3241,9 +3241,9 @@ tilelive-otp-stops@HSLdevcom/tilelive-otp-stops:
     requestretry "^1.6.0"
     vt-pbf "^2.1.1"
 
-tilelive-roadworks-bw@mfdz/tilelive-roadworks-bw#b0b955ef1dca027059fb2b573ab25eef8efaa6a3:
+tilelive-roadworks-bw@mfdz/tilelive-roadworks-bw#ca985f0c76d74ce2658f307cbeb81376185de4f0:
   version "0.0.1"
-  resolved "https://codeload.github.com/mfdz/tilelive-roadworks-bw/tar.gz/b0b955ef1dca027059fb2b573ab25eef8efaa6a3"
+  resolved "https://codeload.github.com/mfdz/tilelive-roadworks-bw/tar.gz/ca985f0c76d74ce2658f307cbeb81376185de4f0"
   dependencies:
     geojson-vt "^2.1.8"
     requestretry "^1.6.0"
