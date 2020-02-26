@@ -29,9 +29,12 @@
     "tilelive-otp-citybikes": "HSLdevcom/tilelive-otp-citybikes#3f403de9859415146142f4f0b371ee258332c864",
     "tilelive-otp-routes": "HSLdevcom/tilelive-otp-routes",
     "tilelive-otp-stops": "HSLdevcom/tilelive-otp-stops",
-    "tilelive-hb-parking": "mfdz/tilelive-park-api",
+    "tilelive-hb-parking": "mfdz/tilelive-park-api#946700ddd36abbfa54956190d0902dec9bf2f876",
     "tilelive-roadworks-bw": "mfdz/tilelive-roadworks-bw#ca985f0c76d74ce2658f307cbeb81376185de4f0",
     "tilelive-vector": "^3.9.3",
     "tilelive-xray": "^0.4.0"
+  },
+  "resolutions": {
+    "**/tilelive-cache": "leonardehrenfried/tilelive-cache#21e07296fb5382bd44c31d6dae8498dda6bc0f8c"
   }
 }
