@@ -11,7 +11,7 @@ module.exports = {
   "/map/v1/hb-parking-map": {
     "source": `hbparking://`,
     "headers": {
-      "Cache-Control": "public,max-age=180"
+      "Cache-Control": "public,max-age=120"
     }
   },
   "/map/v1/roadworks-bw-map": {

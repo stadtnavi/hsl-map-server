@@ -3176,7 +3176,7 @@ tilelive-gl@hsldevcom/tilelive-gl#2f61ec0da7e5b13ca547fa5350905f3c2a688813:
 
 tilelive-hb-parking@mfdz/tilelive-park-api:
   version "0.0.1"
-  resolved "https://codeload.github.com/mfdz/tilelive-park-api/tar.gz/80697a7016e84715ce59ace4ddd213ffead4cac0"
+  resolved "https://codeload.github.com/mfdz/tilelive-park-api/tar.gz/eee5cf5c22dceafebc4d6433f2e4282a42fbd997"
   dependencies:
     geojson-vt "^2.1.8"
     requestretry "^1.6.0"
