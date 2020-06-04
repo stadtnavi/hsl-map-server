@@ -30,3 +30,4 @@ docker build . -t mfdz/hsl-map-server:latest && docker run -it mfdz/hsl-map-serv
 
 Now that you are inside the docker container you can run the yarn commands.
 
+
