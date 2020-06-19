@@ -2,8 +2,8 @@ name: Run tests and build docker image
 
 on:
   push:
-    branches:
-      - master
+  pull_request:
+    branches: [ master ]
 
 jobs:
   docker:
@@ -12,6 +12,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends build-essential docker
+      - name: Building docker image
+        env:
+          DOCKER_IMAGE: mfdz/hsl-map-server:latest
+        run: docker build --tag=$DOCKER_IMAGE -f Dockerfile .
+      - name: Running docker image
+        env:
+          OTP_URL: api.digitransit.fi/routing/v1/routers/hsl/index/graphql
+          DOCKER_IMAGE: mfdz/hsl-map-server:latest
+          ROADWORKS_API_URL: "https://gist.githubusercontent.com/leonardehrenfried/394c25941028670b5be26ef24248725d/raw/428c0c14cf6ee62f926a798fa7fda6755740185b/roadworks.json"
+        run: docker run --rm -p 8080:8080 -h hsl-map-server --name hsl-map-server -e OTP_URL=$OTP_URL -e ROADWORKS_API_URL=$ROADWORKS_API_URL $DOCKER_IMAGE &
+      - name: Run test
+        env:
+          URL: http://localhost:8080/map/v1/roadworks-bw-map/16/34378/22618.pbf
+          MINLENGTH: 20
+        run: ./test.sh $URL $MINLENGTH
+      - name: Stopping docker image
+        run: docker stop hsl-map-server
       - name: Publish to Dockerhub
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
@@ -19,4 +40,5 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_AUTH}}
           tags: "latest,${{ github.sha }}"
+        if: ${{ github.ref == "master" }}
 
