@@ -1,5 +1,6 @@
 # hsl-map-server customised for Herrenberg
 [![Build Status](https://travis-ci.org/mfdz/hsl-map-server.svg?branch=master)](https://travis-ci.org/mfdz/hsl-map-server)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/stadtnavi/hsl-map-server?label=Dockerhub%20version)](https://hub.docker.com/repository/docker/stadtnavi/hsl-map-server/tags?page=1&ordering=last_updated)
 
 Start development server:
 
