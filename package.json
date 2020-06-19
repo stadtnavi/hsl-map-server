@@ -26,7 +26,7 @@
     "tilelive-hsl-parkandride": "HSLdevcom/tilelive-hsl-parkandride",
     "tilelive-hsl-ticket-sales": "HSLdevcom/tilelive-hsl-ticket-sales",
     "tilelive-http": "^0.14.0",
-    "tilelive-otp-citybikes": "HSLdevcom/tilelive-otp-citybikes#3f403de9859415146142f4f0b371ee258332c864",
+    "tilelive-otp-citybikes": "HSLdevcom/tilelive-otp-citybikes#493589481e96e32928a3f64eb6701ec1650334ff",
     "tilelive-otp-routes": "HSLdevcom/tilelive-otp-routes",
     "tilelive-otp-stops": "mfdz/tilelive-otp-stops",
     "tilelive-hb-parking": "mfdz/tilelive-park-api#946700ddd36abbfa54956190d0902dec9bf2f876",
@@ -35,6 +35,6 @@
     "tilelive-xray": "^0.4.0"
   },
   "resolutions": {
-    "**/tilelive-cache": "leonardehrenfried/tilelive-cache#21e07296fb5382bd44c31d6dae8498dda6bc0f8c"
+    "tilelive-cache": "^0.7.2"
   }
 }
