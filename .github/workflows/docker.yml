@@ -18,6 +18,7 @@ jobs:
           # the actual roadworks API server seems to block requests from the travis build hosts and therefore we need to override the URL and use static JSON hosted on Github
           ROADWORKS_API_URL: "https://gist.githubusercontent.com/leonardehrenfried/394c25941028670b5be26ef24248725d/raw/428c0c14cf6ee62f926a798fa7fda6755740185b/roadworks.json"
         run: |-
+          echo ${{ github.ref }}
           docker build --tag=$DOCKER_IMAGE -f Dockerfile .
           docker run --rm -p 8080:8080 -h hsl-map-server --name hsl-map-server -e OTP_URL=$OTP_URL -e ROADWORKS_API_URL=$ROADWORKS_API_URL $DOCKER_IMAGE &
       - name: Run test
@@ -31,7 +32,7 @@ jobs:
 
   docker:
     name: Build docker image
-    if: github.ref == 'master'
+    if: ${{ github.ref == 'refs/heads/master' }}
 
     runs-on: ubuntu-latest
     steps:
