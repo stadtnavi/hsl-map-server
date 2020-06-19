@@ -35,6 +35,6 @@
     "tilelive-xray": "^0.4.0"
   },
   "resolutions": {
-    "**/tilelive-cache": "leonardehrenfried/tilelive-cache#21e07296fb5382bd44c31d6dae8498dda6bc0f8c"
+    "tilelive-cache": "^0.7.2"
   }
 }
