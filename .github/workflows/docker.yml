@@ -6,9 +6,8 @@ on:
     branches: [ master ]
 
 jobs:
-  docker:
-    name: Build docker image
-
+  tests:
+    name: Run tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -33,6 +32,14 @@ jobs:
         run: ./test.sh $URL $MINLENGTH
       - name: Stopping docker image
         run: docker stop hsl-map-server
+
+  docker:
+    name: Build docker image
+    if: github.ref == 'master'
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
       - name: Publish to Dockerhub
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
@@ -40,5 +47,3 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_AUTH}}
           tags: "latest,${{ github.sha }}"
-        if: github.ref == 'master'
-
