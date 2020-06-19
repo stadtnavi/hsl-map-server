@@ -47,3 +47,4 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_AUTH}}
           tags: "latest,${{ github.sha }}"
+
