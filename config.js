@@ -23,7 +23,7 @@ module.exports = {
   "/map/v1/regiorad-map": {
     "source": `otpcitybikes://${process.env.OTP_URL}`,
     "headers": {
-      "Cache-Control": "public,max-age=43200"
+      "Cache-Control": "public,max-age=600"
     }
   }
 }
