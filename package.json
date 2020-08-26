@@ -17,24 +17,24 @@
   },
   "homepage": "https://github.com/HSLdevcom/hsl-map-server#readme",
   "dependencies": {
-    "forever": "^0.15.2",
-    "hsl-map-style": "hsldevcom/hsl-map-style#ca06df94c57cdc6aaa68696141879847955b76ea",
-    "mbtiles": "hannesj/node-mbtiles#patch-1",
-    "tessera": "^0.12.0",
-    "tilejson": "^1.0.1",
+    "forever": "^3.0.0",
+    "@mapbox/mbtiles": "^0.12.1",
+    "tessera": "^0.13.1",
+    "@mapbox/tilejson": "^1.1.0",
+    "@mapbox/tilelive-vector": "^4.1.1",
+    "hsl-map-style": "hsldevcom/hsl-map-style#e872d922403fa6f597278cbb7ec15a2e085f37ec",
     "tilelive-gl": "hsldevcom/tilelive-gl#2f61ec0da7e5b13ca547fa5350905f3c2a688813",
     "tilelive-hsl-parkandride": "HSLdevcom/tilelive-hsl-parkandride",
-    "tilelive-hsl-ticket-sales": "HSLdevcom/tilelive-hsl-ticket-sales",
+    "tilelive-hsl-ticket-sales": "HSLdevcom/tilelive-hsl-ticket-sales#482273fff26f83afc422898dad353f75f753c7ee",
     "tilelive-http": "^0.14.0",
     "tilelive-otp-citybikes": "HSLdevcom/tilelive-otp-citybikes#493589481e96e32928a3f64eb6701ec1650334ff",
     "tilelive-otp-routes": "HSLdevcom/tilelive-otp-routes",
     "tilelive-otp-stops": "mfdz/tilelive-otp-stops",
     "tilelive-hb-parking": "stadtnavi/tilelive-park-api#60f0fcb49f00ff35f8d92ace01ad44012b973cfe",
     "tilelive-roadworks-bw": "mfdz/tilelive-roadworks-bw#ca985f0c76d74ce2658f307cbeb81376185de4f0",
-    "tilelive-vector": "^3.9.3",
     "tilelive-xray": "^0.4.0"
   },
   "resolutions": {
-    "tilelive-cache": "^0.7.2"
+    "@mapbox/mapbox-gl-native": "^5.0.2"
   }
 }
