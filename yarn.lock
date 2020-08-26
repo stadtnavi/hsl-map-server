@@ -2625,11 +2625,6 @@ lodash@^4.0.0, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.16.4, lodash@^4.17.4:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
-lodash@^4.17.15:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
-
 logalot@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/logalot/-/logalot-2.1.0.tgz#5f8e8c90d304edf12530951a5554abb8c5e3f552"
@@ -2989,13 +2984,12 @@ node-addon-api@~3.0.0:
   resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-3.0.0.tgz#812446a1001a54f71663bed188314bba07e09247"
   integrity sha512-sSHCgWfJ+Lui/u+0msF3oyCgvdkhxDbkCS6Q8uiJquzOimkJBvX6hl5aSSA7DR1XbMpdM8r7phjcF63sF4rkKg==
 
-node-cache@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/node-cache/-/node-cache-4.2.1.tgz#efd8474dee4edec4138cdded580f5516500f7334"
-  integrity sha512-BOb67bWg2dTyax5kdef5WfU3X8xu4wPg+zHzkvls0Q/QpYycIFRLEEIdAx9Wma43DxG6Qzn4illdZoYseKWa4A==
+node-cache@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/node-cache/-/node-cache-5.1.2.tgz#f264dc2ccad0a780e76253a694e9fd0ed19c398d"
+  integrity sha512-t1QzWwnk4sjLWaQAS8CHgOJ+RAfmHpxFWmc36IWTiWHQfs0w5JDMBS1b1ZxQteo0vVVuWJvIUKHDkkeK7vIGCg==
   dependencies:
     clone "2.x"
-    lodash "^4.17.15"
 
 node-gyp@3.x:
   version "3.8.0"
@@ -4540,12 +4534,12 @@ tilelive-gl@hsldevcom/tilelive-gl#2f61ec0da7e5b13ca547fa5350905f3c2a688813:
     sphericalmercator "^1.0.5"
     url "^0.11.0"
 
-tilelive-hb-parking@stadtnavi/tilelive-park-api#60f0fcb49f00ff35f8d92ace01ad44012b973cfe:
+tilelive-hb-parking@stadtnavi/tilelive-park-api#ca7aad94576d4292acd9d80e247e9a97af2d7822:
   version "0.0.1"
-  resolved "https://codeload.github.com/stadtnavi/tilelive-park-api/tar.gz/60f0fcb49f00ff35f8d92ace01ad44012b973cfe"
+  resolved "https://codeload.github.com/stadtnavi/tilelive-park-api/tar.gz/ca7aad94576d4292acd9d80e247e9a97af2d7822"
   dependencies:
     geojson-vt "^2.1.8"
-    node-cache "^4.2.1"
+    node-cache "^5.1.2"
     requestretry "^1.6.0"
     vt-pbf "^2.0.2"
 
