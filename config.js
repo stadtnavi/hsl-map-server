@@ -14,8 +14,8 @@ module.exports = {
       "Cache-Control": "public,max-age=120"
     }
   },
-  "/map/v1/roadworks-bw-map": {
-    "source": `roadworksbw://`,
+  "/map/v1/cifs": {
+    "source": `cifs://`,
     "headers": {
       "Cache-Control": "public,max-age=3600"
     }

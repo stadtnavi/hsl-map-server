@@ -23,8 +23,8 @@ jobs:
           docker run --rm -p 8080:8080 -h hsl-map-server --name hsl-map-server -e OTP_URL=$OTP_URL -e ROADWORKS_API_URL=$ROADWORKS_API_URL $DOCKER_IMAGE &
       - name: Run test
         env:
-          URL: http://localhost:8080/map/v1/roadworks-bw-map/16/34378/22618.pbf
-          MINLENGTH: 20
+          URL: http://localhost:8080/map/v1/cifs/18/137526/90476.pbf
+          MINLENGTH: 100
         run: |-
           sleep 60
           ./test.sh $URL $MINLENGTH
