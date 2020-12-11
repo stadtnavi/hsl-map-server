@@ -31,7 +31,7 @@
     "tilelive-otp-routes": "HSLdevcom/tilelive-otp-routes",
     "tilelive-otp-stops": "mfdz/tilelive-otp-stops",
     "tilelive-hb-parking": "stadtnavi/tilelive-park-api#3a25d1136750efd914baa3999472ac70b65413e1",
-    "tilelive-cifs": "stadtnavi/tilelive-cifs#334097eb6d445e125ec55d859cc6e8a826f54583",
+    "tilelive-cifs": "stadtnavi/tilelive-cifs#bd718080ee7934c8b2edd2132baaa03636796f5d",
     "tilelive-xray": "^0.4.0"
   },
   "resolutions": {
