@@ -17,7 +17,7 @@ module.exports = {
   "/map/v1/cifs": {
     "source": `cifs://`,
     "headers": {
-      "Cache-Control": "public,max-age=3600"
+      "Cache-Control": "public,max-age=300"
     }
   },
   "/map/v1/regiorad-map": {
