@@ -27,7 +27,7 @@ module.exports = {
     }
   },
   "/map/v1/weather-stations": {
-    "source": `roadweather://`,
+    "source": `weatherstations://`,
     "headers": {
       "Cache-Control": "public,max-age=120"
     }
