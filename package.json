@@ -32,7 +32,7 @@
     "tilelive-otp-stops": "mfdz/tilelive-otp-stops",
     "tilelive-hb-parking": "stadtnavi/tilelive-park-api#3a25d1136750efd914baa3999472ac70b65413e1",
     "tilelive-cifs": "stadtnavi/tilelive-cifs#5cf9195657ebadf744188a0920e24bc1db37e38f",
-    "tilelive-road-weather": "stadtnavi/tilelive-road-weather#c38e59e51d1d23fd8d711a0d0a4f809c149caabe",
+    "tilelive-weather-stations": "stadtnavi/tilelive-weather-stations#fb237ad7df4691c1d38ada2ef83b7b0297c2a53f",
     "tilelive-xray": "^0.4.0"
   },
   "resolutions": {

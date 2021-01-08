@@ -26,7 +26,7 @@ module.exports = {
       "Cache-Control": "public,max-age=600"
     }
   },
-  "/map/v1/road-weather": {
+  "/map/v1/weather-stations": {
     "source": `roadweather://`,
     "headers": {
       "Cache-Control": "public,max-age=120"

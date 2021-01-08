@@ -24,7 +24,7 @@ jobs:
       - name: Run test
         env:
           CIFS_URL: http://localhost:8080/map/v1/cifs/18/137526/90476.pbf
-          ROAD_WEATHER_URL: http://localhost:8080/map/v1/road-weather/17/68761/45237.pbf
+          ROAD_WEATHER_URL: http://localhost:8080/map/v1/weather-stations/17/68761/45237.pbf
           MINLENGTH: 100
         run: |-
           sleep 60

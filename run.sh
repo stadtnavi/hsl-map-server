@@ -21,5 +21,5 @@ node_modules/tessera/bin/tessera.js --port 8080 --config config.js --multiproces
 -r ${WORK}/node_modules/tilelive-hb-parking/ \
 -r ${WORK}/node_modules/tilelive-cifs/ \
 -r ${WORK}/node_modules/tilelive-otp-citybikes/ \
--r ${WORK}/node_modules/tilelive-road-weather/ \
+-r ${WORK}/node_modules/tilelive-weather-stations/ \
 && sleep 10 && node_modules/.bin/forever --fifo logs 0
