@@ -23,11 +23,13 @@ jobs:
           docker run --rm -p 8080:8080 -h hsl-map-server --name hsl-map-server -e OTP_URL=$OTP_URL -e ROADWORKS_API_URL=$ROADWORKS_API_URL $DOCKER_IMAGE &
       - name: Run test
         env:
-          URL: http://localhost:8080/map/v1/cifs/18/137526/90476.pbf
+          CIFS_URL: http://localhost:8080/map/v1/cifs/18/137526/90476.pbf
+          ROAD_WEATHER_URL: http://localhost:8080/map/v1/road-weather/17/68761/45237.pbf
           MINLENGTH: 100
         run: |-
           sleep 60
-          ./test.sh $URL $MINLENGTH
+          ./test.sh $CIFS_URL $MINLENGTH
+          ./test.sh $ROAD_WEATHER_URL $MINLENGTH
           docker stop hsl-map-server
 
   docker:
