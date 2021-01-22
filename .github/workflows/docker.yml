@@ -25,11 +25,13 @@ jobs:
         env:
           CIFS_URL: http://localhost:8080/map/v1/cifs/18/137526/90476.pbf
           ROAD_WEATHER_URL: http://localhost:8080/map/v1/weather-stations/17/68761/45237.pbf
+          CHARGING_STATIONS_URL: http://localhost:8080/map/v1/charging-stations/17/68762/45237.pbf
           MINLENGTH: 100
         run: |-
           sleep 60
           ./test.sh $CIFS_URL $MINLENGTH
           ./test.sh $ROAD_WEATHER_URL $MINLENGTH
+          ./test.sh $CHARGING_STATIONS_URL $MINLENGTH
           docker stop hsl-map-server
 
   docker:

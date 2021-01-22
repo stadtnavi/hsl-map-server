@@ -32,4 +32,10 @@ module.exports = {
       "Cache-Control": "public,max-age=120"
     }
   },
+  "/map/v1/charging-stations": {
+    "source": `chargingstations://`,
+    "headers": {
+      "Cache-Control": "public,max-age=120"
+    }
+  },
 }
