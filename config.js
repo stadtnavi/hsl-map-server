@@ -38,4 +38,10 @@ module.exports = {
       "Cache-Control": "public,max-age=120"
     }
   },
+  "/map/v1/bus-positions": {
+    "source": `buspositions://`,
+    "headers": {
+      "Cache-Control": "public,max-age=15"
+    }
+  },
 }
