@@ -12,9 +12,7 @@ jobs:
       - name: Build image and start container
         env:
           DOCKER_IMAGE: stadtnavi/hsl-map-server:latest
-          # this is set to a Finnish API server as we need a working API for the map server to start. of course it doesn't return
-          # useful information for Germany but at least we can test that the tiles exist (even though they are empty).
-          OTP_URL: api.staging.stadtnavi.eu/routing/v1/router/index/graphql
+          OTP_URL: https://api.staging.stadtnavi.eu/routing/v1/router/index/graphql
           # the actual roadworks API server seems to block requests from the travis build hosts and therefore we need to override the URL and use static JSON hosted on Github
           ROADWORKS_API_URL: "https://gist.githubusercontent.com/leonardehrenfried/394c25941028670b5be26ef24248725d/raw/428c0c14cf6ee62f926a798fa7fda6755740185b/roadworks.json"
         run: |-
