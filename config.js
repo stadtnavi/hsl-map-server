@@ -39,9 +39,9 @@ module.exports = {
     }
   },
   "/map/v1/bus-positions": {
-    "source": `buspositions://`,
+    "source": `bikeparks://${process.env.OTP_URL}`,
     "headers": {
-      "Cache-Control": "public,max-age=15"
+      "Cache-Control": "public,max-age=3600"
     }
   },
 }

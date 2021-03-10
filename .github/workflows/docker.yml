@@ -14,7 +14,7 @@ jobs:
           DOCKER_IMAGE: stadtnavi/hsl-map-server:latest
           # this is set to a Finnish API server as we need a working API for the map server to start. of course it doesn't return
           # useful information for Germany but at least we can test that the tiles exist (even though they are empty).
-          OTP_URL: api.digitransit.fi/routing/v1/routers/hsl/index/graphql
+          OTP_URL: api.staging.stadtnavi.eu/routing/v1/router/index/graphql
           # the actual roadworks API server seems to block requests from the travis build hosts and therefore we need to override the URL and use static JSON hosted on Github
           ROADWORKS_API_URL: "https://gist.githubusercontent.com/leonardehrenfried/394c25941028670b5be26ef24248725d/raw/428c0c14cf6ee62f926a798fa7fda6755740185b/roadworks.json"
         run: |-
@@ -26,14 +26,14 @@ jobs:
           CIFS_URL: http://localhost:8080/map/v1/cifs/18/137526/90476.pbf
           ROAD_WEATHER_URL: http://localhost:8080/map/v1/weather-stations/17/68761/45237.pbf
           CHARGING_STATIONS_URL: http://localhost:8080/map/v1/charging-stations/17/68762/45237.pbf
-          BUS_POSITIONS_URL: http://localhost:8080/map/v1/bus-positions/17/68763/45237.pbf
+          BIKE_PARKS_URL: http://localhost:8080/map/v1/bike-parks/17/68763/45237.pbf
           MINLENGTH: 100
         run: |-
           sleep 60
           ./test.sh $CIFS_URL $MINLENGTH
           ./test.sh $ROAD_WEATHER_URL $MINLENGTH
           ./test.sh $CHARGING_STATIONS_URL $MINLENGTH
-          ./test.sh $BUS_POSITIONS_URL $MINLENGTH
+          ./test.sh $BIKE_PARKS_URL $MINLENGTH
           docker stop hsl-map-server
 
   docker:
