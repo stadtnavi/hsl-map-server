@@ -38,7 +38,7 @@ module.exports = {
       "Cache-Control": "public,max-age=120"
     }
   },
-  "/map/v1/bus-positions": {
+  "/map/v1/bike-parks": {
     "source": `bikeparks://${process.env.OTP_URL}`,
     "headers": {
       "Cache-Control": "public,max-age=3600"
