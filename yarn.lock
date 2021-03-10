@@ -4979,7 +4979,7 @@ through@2, through@~2.3, through@~2.3.1, through@~2.3.4:
 
 tilelive-bike-parks@stadtnavi/tilelive-bike-parks#ef817e747c34816de3e76e84c38d78359bbf2f61:
   version "0.0.1"
-  resolved "git+ssh://git@github.com/stadtnavi/tilelive-bike-parks.git#ef817e747c34816de3e76e84c38d78359bbf2f61"
+  resolved "https://codeload.github.com/stadtnavi/tilelive-bike-parks/tar.gz/ef817e747c34816de3e76e84c38d78359bbf2f61"
   dependencies:
     geojson-vt "^3.2.1"
     lodash "^4.17.20"
