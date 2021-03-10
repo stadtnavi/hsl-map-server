@@ -33,7 +33,7 @@
     "tilelive-hb-parking": "stadtnavi/tilelive-park-api#3a25d1136750efd914baa3999472ac70b65413e1",
     "tilelive-cifs": "stadtnavi/tilelive-cifs#5cf9195657ebadf744188a0920e24bc1db37e38f",
     "tilelive-weather-stations": "stadtnavi/tilelive-weather-stations#8949db5bf75a991b09bdee20274dc6fc7022b203",
-    "tilelive-bike-parks": "stadtnavi/tilelive-bike-parks#b02e99faeac4d92db7759542e2876b712ae3561c",
+    "tilelive-bike-parks": "stadtnavi/tilelive-bike-parks#6faf3062f72162f47f2ed9725f3f17e12e392bd4",
     "tilelive-charging-stations": "stadtnavi/tilelive-charging-stations#5ba77fefca6fea31e2cde543c7084a6cb93b6f8b",
     "tilelive-xray": "^0.4.0"
   },
