@@ -29,7 +29,6 @@
     "tilelive-http": "^0.14.0",
     "tilelive-otp-citybikes": "stadtnavi/tilelive-otp-citybikes#70b95fc920fc6cabcca0e0f35d0f1b2e92706d1e",
     "tilelive-otp-routes": "HSLdevcom/tilelive-otp-routes",
-    "tilelive-otp-stops": "stadtnavi/tilelive-otp-stops#45679db500abfc0f5f6b8bc2deec6c913c08b349",
     "tilelive-hb-parking": "stadtnavi/tilelive-park-api#3a25d1136750efd914baa3999472ac70b65413e1",
     "tilelive-cifs": "stadtnavi/tilelive-cifs#dde15b73d780d1ec5be2a6c25b8cb2ef8ac90361",
     "tilelive-weather-stations": "stadtnavi/tilelive-weather-stations#8949db5bf75a991b09bdee20274dc6fc7022b203",
