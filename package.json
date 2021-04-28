@@ -27,7 +27,7 @@
     "tilelive-hsl-parkandride": "HSLdevcom/tilelive-hsl-parkandride",
     "tilelive-hsl-ticket-sales": "HSLdevcom/tilelive-hsl-ticket-sales#482273fff26f83afc422898dad353f75f753c7ee",
     "tilelive-http": "^0.14.0",
-    "tilelive-otp-citybikes": "stadtnavi/tilelive-otp-citybikes#88621aff5209c5507ba9644e6d191bb6921513a9",
+    "tilelive-otp-citybikes": "stadtnavi/tilelive-otp-citybikes#0677b686ec1ed3c3c66dadbb710fe0d2f99321b4",
     "tilelive-otp-routes": "HSLdevcom/tilelive-otp-routes",
     "tilelive-hb-parking": "stadtnavi/tilelive-park-api#3a25d1136750efd914baa3999472ac70b65413e1",
     "tilelive-cifs": "stadtnavi/tilelive-cifs#dde15b73d780d1ec5be2a6c25b8cb2ef8ac90361",
