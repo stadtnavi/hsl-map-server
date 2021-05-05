@@ -14,12 +14,6 @@ module.exports = {
       "Cache-Control": "public,max-age=300"
     }
   },
-  "/map/v1/regiorad-map": {
-    "source": `otpcitybikes://`,
-    "headers": {
-      "Cache-Control": "public,max-age=600"
-    }
-  },
   "/map/v1/weather-stations": {
     "source": `weatherstations://`,
     "headers": {
