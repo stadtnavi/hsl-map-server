@@ -21,7 +21,7 @@ jobs:
           docker run --rm -p 8080:8080 -h hsl-map-server --name hsl-map-server -e OTP_URL=$OTP_URL -e ROADWORKS_API_URL=$ROADWORKS_API_URL $DOCKER_IMAGE &
       - name: Run test
         env:
-          CIFS_URL: http://localhost:8080/map/v1/cifs/18/137526/90476.pbf
+          CIFS_URL: http://localhost:8080/map/v1/cifs/17/68767/45238.pbf
           ROAD_WEATHER_URL: http://localhost:8080/map/v1/weather-stations/17/68761/45237.pbf
           CHARGING_STATIONS_URL: http://localhost:8080/map/v1/charging-stations/17/68762/45237.pbf
           BIKE_PARKS_URL: http://localhost:8080/map/v1/bike-parks/17/68763/45237.pbf
